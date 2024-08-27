@@ -1,0 +1,16 @@
+<div class="form-group row form-group--captcha">
+    <div class="col-md-3"></div>
+    <div class="col-md-9">
+        <div class="captcha-area">
+            <div class="captcha-image"><img src="{{captcha_url}}" alt="captcha"/></div>
+            <div class="captcha-refresh">
+                <button class="btn" type="button" title="{{#str}} refresh_tooltip, local_captcha {{/str}}">
+                    <i class="fa fa-refresh"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{{#js}}
+    require(['local_captcha/captcha'], (module) => module.init("{{captcha_base_url}}", "{{captcha_input_name}}"));
+{{/js}}
