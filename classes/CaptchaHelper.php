@@ -124,7 +124,7 @@ class CaptchaHelper
         $captchaName = self::getCaptchaInputName();
 
         if (empty($captchaValue)) {
-            $captchaValue = optional_param($captchaName, null, PARAM_TEXT);
+            $captchaValue = optional_param($captchaName, '', PARAM_TEXT);
         }
 
         $captchaValue = self::convertPersianArabicNumeralsToEnglish($captchaValue);

@@ -13,6 +13,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2024082700;
+$plugin->version = 2024100300;
 $plugin->requires = 2018051700;
 $plugin->component = 'local_captcha';
